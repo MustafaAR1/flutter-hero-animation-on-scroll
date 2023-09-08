@@ -18,30 +18,7 @@ class MyApp extends StatelessWidget {
         primaryColor: const Color(0xffEE5366),
       ),
       debugShowCheckedModeBanner: false,
-      home: MyHomePage(),
-
-      //  Scaffold(
-      //   body: ShowCaseWidget(
-      //     onStart: (index, key) {
-      //       log('onStart: $index, $key');
-      //     },
-      //     onComplete: (index, key) {
-      //       log('onComplete: $index, $key');
-      //       if (index == 4) {
-      //         SystemChrome.setSystemUIOverlayStyle(
-      //           SystemUiOverlayStyle.light.copyWith(
-      //             statusBarIconBrightness: Brightness.dark,
-      //             statusBarColor: Colors.white,
-      //           ),
-      //         );
-      //       }
-      //     },
-      //     enableShowcase: true,
-      //     blurValue: 1,
-      //     builder: Builder(builder: (context) => const MailPage()),
-      //     autoPlayDelay: const Duration(seconds: 3),
-      //   ),
-      // ),
+      home: const MyHomePage(),
     );
   }
 }
@@ -66,13 +43,7 @@ class _MailPageState extends State<MailPage> {
   @override
   void initState() {
     super.initState();
-    //Start showcase view after current widget frames are drawn.
-    //NOTE: remove ambiguate function if you are using
-    //flutter version greater than 3.x and direct use WidgetsBinding.instance
-    // ambiguate(WidgetsBinding.instance)?.addPostFrameCallback(
-    //   (_) => ShowCaseWidget.of(context)
-    //       .startShowCase([_one, _two, _three, _four, _five]),
-    // );
+
     mails = [
       Mail(
         sender: 'Medium',
