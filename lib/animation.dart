@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPanUpdate: (DragUpdateDetails details) {
           if (details.delta.dy < -5) {
             print('DETAILS.DELTA.DY: ${details.delta.dy}');
-            Navigator.push(context, FadeRoute(page: Screen1()));
+            Navigator.push(context, FadeRoute(page: const Screen1()));
             // Navigator.push(
             //     context,
             //     MaterialPageRoute(
